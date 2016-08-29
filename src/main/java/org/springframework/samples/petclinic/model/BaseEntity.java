@@ -6,13 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 /**
- * Created by U27688 on 8/25/2016.
+ *
  */
 @MappedSuperclass
 public class BaseEntity {
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Integer Id;
+
 
     public Integer getId() {
         return Id;
